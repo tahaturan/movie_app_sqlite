@@ -6,8 +6,8 @@ class Movies {
   String movieName;
   int movieYear;
   String movieImage;
-  Categories categori;
+  Categories category;
   Director director;
   Movies(this.movieId, this.movieName, this.movieYear, this.movieImage,
-      this.categori, this.director);
+      this.category, this.director);
 }

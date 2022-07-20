@@ -1,5 +1,5 @@
 class Categories {
-  int categoriId;
-  String categoriName;
-  Categories(this.categoriId, this.categoriName);
+  int categoryId;
+  String categoryName;
+  Categories(this.categoryId, this.categoryName);
 }

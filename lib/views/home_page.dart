@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app_sqlite/database/categories_dao.dart';
 import 'package:movie_app_sqlite/model/categories.dart';
 import 'package:movie_app_sqlite/views/movie_page.dart';
 
@@ -11,11 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Future<List<Categories>> showAllCategories() async {
-    List<Categories> categoryList = [];
-    var k1 = Categories(1, "Komedi");
-    var k2 = Categories(2, "Bilim Kurgu");
-    categoryList.add(k1);
-    categoryList.add(k2);
+    List<Categories> categoryList = await CategoriesDao.allCategories();
     return categoryList;
   }
 
